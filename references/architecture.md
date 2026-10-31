@@ -9,8 +9,8 @@ etude-management/                 ~/.claude/skills/                    ~/Etudes/
 ├── scripts/etude.py              ├── zotero-bridge/     (rendu)       ├── 00_Cadre/
 ├── modules/<module>/             ├── apple-calendar/    (rendu)       ├── 01_A_faire/
 ├── templates/espace/             └── …                                ├── Matieres/ (ou Sujets/…)
-├── references/                   ~/.codex/skills/                     ├── Obsidian/ (ou Notes/)
-└── local/config.json (privé)     └── … liens vers les précédents      └── BRIEF_CHATGPT.md (facultatif)
+├── references/                   ~/.codex/skills/                     └── Obsidian/ (ou Notes/)
+└── local/config.json (privé)     └── … liens vers les précédents
 ```
 
 - **Le dépôt** est générique et public : aucun chemin ni nom personnel. `local/config.json` (ignoré par git) garde les réponses de l'entretien.

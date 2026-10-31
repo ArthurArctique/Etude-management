@@ -15,7 +15,7 @@ Accepter uniquement un lien de partage officiel dont l'hôte est `chatgpt.com` o
 Ouvrir directement le lien avec l'outil web ou le navigateur disponible. Ne pas rechercher son identifiant dans un moteur de recherche. Si l'instantané demande une authentification, n'est plus partagé, est incomplet ou illisible avec les outils disponibles, demander à l'utilisateur, dans cet ordre :
 
 1. de joindre l'instantané ou la conversation en pièce jointe ;
-2. de coller un export ou le bloc « Passage de relais vers l'agent » ;
+2. de coller un export de la conversation ;
 3. de copier les messages et documents strictement nécessaires.
 
 Ne pas automatiser une connexion au compte de l'utilisateur ni contourner un contrôle d'accès.
@@ -102,4 +102,4 @@ Ajouter l'URL source et la date de consultation. Si rien n'est pertinent pour la
 
 ## Dans l'espace « {{TITRE}} »
 
-Dans `{{ESPACE}}`, lire `AGENTS.md`, `BRIEF_CHATGPT.md` et les index pertinents (`{{INDEX}}`) avant de proposer une intégration. Le brief sert au départ vers ChatGPT ; ce skill sert au retour vers l'agent. Les notes, l'agenda, les ressources Zotero et les fichiers de l'espace gardent leurs propres règles d'accès et d'écriture.
+Dans `{{ESPACE}}`, lire `AGENTS.md` et les index pertinents (`{{INDEX}}`) avant de proposer une intégration. Les notes, l'agenda, les ressources Zotero et les fichiers de l'espace gardent leurs propres règles d'accès et d'écriture.

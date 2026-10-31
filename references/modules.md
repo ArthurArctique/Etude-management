@@ -40,7 +40,6 @@
 ## Import ChatGPT
 
 - Lit un lien `chatgpt.com/share/…` et en tire objectifs, décisions, documents et points ouverts, confrontés à l'état réel de l'espace. Lecture seule par défaut.
-- Crée dans l'espace `BRIEF_CHATGPT.md`, à coller au début d'une conversation ChatGPT ; il se termine par le format de « passage de relais » à rapporter à l'agent.
 
 ## Moodle Bridge (projet séparé)
 

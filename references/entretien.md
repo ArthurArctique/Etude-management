@@ -40,7 +40,7 @@ Présenter chaque module en une ligne, avec son système (`etude.py modules` don
 10. **Apple Calendar** (`apple-calendar`, **macOS uniquement**) : lire l'emploi du temps et les disponibilités, et relier aux séances leurs documents, notes et références, après confirmation.
 11. **Apple Mail** (`apple-mail`, **macOS uniquement**) : chercher, lire et résumer ses mails ; brouillons ; envois seulement après aperçu et confirmation.
 12. **Suivi des notes** (`suivi-notes`) : s'il tient un classeur de notes (Excel `.xlsx`), donner son chemin (`classeur`). Sans classeur, ne pas installer ce module pour l'instant.
-13. **Import ChatGPT** (`chatgpt-context-import`) : reprendre dans l'espace le contexte d'une conversation ChatGPT partagée. Crée aussi `BRIEF_CHATGPT.md`, un brief à coller dans ChatGPT.
+13. **Import ChatGPT** (`chatgpt-context-import`) : reprendre dans l'espace le contexte d'une conversation ChatGPT partagée.
 
 Sur un autre système que macOS, citer Apple Calendar et Apple Mail comme indisponibles et ne pas les proposer.
 

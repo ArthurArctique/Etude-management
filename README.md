@@ -19,10 +19,9 @@ Le dépôt est un **skill**. La première fois, l'agent te pose quelques questio
 ├── 01_A_faire/                  tâches reportées, reprenables par n'importe quel agent
 ├── Matieres/                    une matière par dossier
 │   └── CHO/TP/TP03/             sujet, données et scripts du TP 3
-├── Obsidian/                    ton vault de notes
-│   ├── Dictionnaire.md          définitions accumulées au fil des cours
-│   └── À approfondir.md         notions à reprendre plus tard
-└── BRIEF_CHATGPT.md             facultatif : contexte à coller dans ChatGPT
+└── Obsidian/                    ton vault de notes
+    ├── Dictionnaire.md          définitions accumulées au fil des cours
+    └── À approfondir.md         notions à reprendre plus tard
 ```
 
 Les noms s'adaptent à ton domaine : `Matieres/` avec `CM`, `TD`, `TP` pour l'université, `Sujets/` pour un apprentissage en autonomie, `Projets/` pour la recherche, et tu peux tout renommer pendant l'entretien.
