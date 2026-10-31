@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zotero Bridge"
+  short_description: "Consulter et organiser Zotero localement"
+  default_prompt: "Utilise $zotero-bridge pour retrouver le support de cours exact de ma question, puis réponds en citant la source."
+
+policy:
+  allow_implicit_invocation: true

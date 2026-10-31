@@ -1,0 +1,7 @@
+{
+  "titre": "Apple Calendar",
+  "resume": "Lire l'agenda synchronisé sur le Mac (EventKit) et, après confirmation, relier des ressources à un événement.",
+  "systemes": ["darwin"],
+  "requis": [],
+  "teste": "macOS 14 ou plus récent"
+}

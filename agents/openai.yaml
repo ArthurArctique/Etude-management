@@ -1,0 +1,7 @@
+interface:
+  display_name: "Etude management"
+  short_description: "Créer et entretenir un espace d'étude assisté par IA, avec Zotero, Obsidian et modules facultatifs"
+  default_prompt: "Utilise $etude-management pour vérifier l'état de mon espace d'étude et de ses modules, ou pour le créer s'il n'existe pas encore."
+
+policy:
+  allow_implicit_invocation: true

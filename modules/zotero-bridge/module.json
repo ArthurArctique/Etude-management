@@ -1,0 +1,8 @@
+{
+  "titre": "Zotero Bridge",
+  "resume": "Rechercher, lire et organiser la bibliothèque Zotero locale par un plugin local à commandes fixes, sans cloud ni accès direct à la base.",
+  "systemes": ["darwin", "linux", "win32"],
+  "requis": ["ZOTERO_FICHIERS"],
+  "exclure": ["tools/tests"],
+  "teste": "macOS avec Zotero 9 ; Linux et Windows non testés"
+}

@@ -1,0 +1,7 @@
+{
+  "titre": "Suivi des notes",
+  "resume": "Lire un classeur de notes (moyennes, coefficients, crédits) et le mettre à jour seulement après un plan confirmé.",
+  "systemes": ["darwin", "linux", "win32"],
+  "requis": ["CLASSEUR"],
+  "teste": "classeur Excel (.xlsx)"
+}

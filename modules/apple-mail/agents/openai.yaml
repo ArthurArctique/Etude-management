@@ -1,0 +1,7 @@
+interface:
+  display_name: "Apple Mail"
+  short_description: "Lire et gérer Mail sous supervision"
+  default_prompt: "Utilise $apple-mail pour me résumer mes mails non lus des 7 derniers jours."
+
+policy:
+  allow_implicit_invocation: true

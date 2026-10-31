@@ -1,0 +1,7 @@
+interface:
+  display_name: "Apple Calendar"
+  short_description: "Lire l'agenda et relier des ressources aux cours"
+  default_prompt: "Utilise $apple-calendar pour me montrer mes cours des 7 prochains jours et les ressources déjà associées."
+
+policy:
+  allow_implicit_invocation: true

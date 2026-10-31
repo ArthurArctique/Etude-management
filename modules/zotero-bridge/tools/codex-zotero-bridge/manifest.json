@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero Bridge",
+  "version": "1.2.0",
+  "description": "Pont local restreint entre les agents IA et Zotero, sans exécution de code arbitraire.",
+  "applications": {
+    "zotero": {
+      "id": "codex-zotero-bridge@local",
+      "strict_min_version": "6.999",
+      "strict_max_version": "10.*",
+      "update_url": "https://codex-zotero-bridge.invalid/updates.json"
+    }
+  }
+}

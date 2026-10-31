@@ -1,0 +1,11 @@
+# Configuration personnelle (chemins, choix de l'entretien)
+local/
+
+# Fichiers construits sur place
+*.xpi
+modules/apple-calendar/app/
+
+# Python et système
+__pycache__/
+*.pyc
+.DS_Store

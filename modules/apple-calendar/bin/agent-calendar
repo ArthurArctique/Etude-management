@@ -1,0 +1,30 @@
+#!/bin/bash
+# Lance le client EventKit via la mini-app « Agent Calendar » afin que macOS rattache
+# l'autorisation Calendriers à cette app plutôt qu'au terminal ou à l'app de l'agent.
+# Mêmes commandes et options que le client ; les chemins passés doivent être absolus.
+set -euo pipefail
+app="$(cd "$(dirname "$0")/.." && pwd)/app/Agent Calendar.app"
+exe="$app/Contents/MacOS/apple-calendar"
+if [ ! -x "$exe" ]; then
+  echo '{"error": "Mini-app Agent Calendar absente : lancer scripts/build.sh une fois (voir SKILL.md, premier usage)."}'
+  exit 1
+fi
+out="$(mktemp -t agent-calendar.out)"
+err="$(mktemp -t agent-calendar.err)"
+trap 'rm -f "$out" "$err"' EXIT
+
+# `open -W` rend parfois la main avant la fin quand l'app se termine très vite
+# (« Unable to block on application ») : attendre ensuite la fin réelle et une sortie écrite.
+/usr/bin/open -W -n -g --stdout "$out" --stderr "$err" "$app" --args "$@" 2>/dev/null || true
+for _ in $(seq 1 1200); do
+  if [ -s "$out" ] && ! pgrep -f -q "$exe"; then break; fi
+  sleep 0.1
+done
+
+if [ ! -s "$out" ]; then
+  echo '{"error": "Aucune réponse de la mini-app Agent Calendar (lancement impossible ou délai de 120 s dépassé)."}'
+  exit 1
+fi
+cat "$out"
+cat "$err" >&2
+if grep -q '"error"' "$out"; then exit 1; fi

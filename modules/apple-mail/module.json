@@ -1,0 +1,7 @@
+{
+  "titre": "Apple Mail",
+  "resume": "Chercher, lire et résumer ses mails dans l'app Mail ; brouillons libres, envois et déplacements après aperçu et confirmation.",
+  "systemes": ["darwin"],
+  "requis": [],
+  "teste": "macOS : lecture et aperçus testés ; envoi, marquage et pièces jointes pas encore exercés"
+}

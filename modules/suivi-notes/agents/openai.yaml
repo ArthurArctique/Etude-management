@@ -1,0 +1,7 @@
+interface:
+  display_name: "Suivi des notes"
+  short_description: "Lire et mettre à jour le classeur de notes"
+  default_prompt: "Utilise $suivi-notes pour résumer mes résultats actuels et ce qu'il me faut pour valider."
+
+policy:
+  allow_implicit_invocation: true

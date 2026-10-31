@@ -1,0 +1,7 @@
+{
+  "titre": "Import de conversations ChatGPT",
+  "resume": "Reprendre le contexte utile d'une conversation ChatGPT ou Codex partagée (lien chatgpt.com/share), en lecture seule.",
+  "systemes": ["darwin", "linux", "win32"],
+  "requis": [],
+  "teste": "liens de partage publics"
+}

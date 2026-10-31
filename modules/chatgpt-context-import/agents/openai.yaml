@@ -1,0 +1,7 @@
+interface:
+  display_name: "Import ChatGPT"
+  short_description: "Reprendre le contexte d'une conversation partagée"
+  default_prompt: "Utilise $chatgpt-context-import pour récupérer le contexte utile de ce lien de conversation partagée."
+
+policy:
+  allow_implicit_invocation: true
