@@ -156,26 +156,9 @@ Ouvre une session de ton agent dans le dossier de ton espace, puis parle-lui nor
 
 ## Sécurité et confidentialité
 
-### Pars du principe que tout sera lu
+**Pars du principe que tout ce qui est lisible sera lu.** Avec un agent dont le modèle tourne dans le cloud (Claude, ChatGPT, Codex…), tout ce que l'agent lit part sur les serveurs de son fournisseur. Comme l'espace est fait pour qu'il cherche ses sources lui-même, tout ce qui se trouve dans le dossier et dans la bibliothèque Zotero reliée y passera un jour, sous une forme que tu ne choisis pas : extrait, résumé ou document entier. Avec Claude, cela veut dire chez Anthropic. Une consigne « ne lis pas ce fichier » ne protège rien : ce que tu ne veux pas transmettre n'a rien à faire dans l'espace ni dans Zotero.
 
-Claude Code et Codex s'exécutent sur ton ordinateur, mais le modèle qui lit et qui répond tourne chez leur fournisseur : Anthropic pour Claude, OpenAI pour ChatGPT et Codex. Tout ce que l'agent lit pour travailler part donc sur leurs serveurs : le contenu d'un fichier qu'il ouvre, le texte extrait d'un PDF, les résultats d'une recherche dans Zotero, un mail, un événement d'agenda, une cellule de ton classeur.
-
-Or cet espace est fait pour que l'agent aille chercher ses sources lui-même. Il faut donc partir du principe que **tout ce qui est lisible dans le dossier de l'espace et dans la bibliothèque Zotero reliée sera lu un jour par l'agent**, et donc envoyé à son fournisseur : parce que tu le lui demandes, parce qu'il cherche la source d'une question, ou au détour d'une recherche plus large que prévu. Avec Claude, considère que toutes ces données arriveront un jour sur les serveurs d'Anthropic, sous une forme que tu ne choisis pas : un extrait, un résumé ou le document entier. Ce qu'elles y deviennent (durée de conservation, utilisation pour améliorer les modèles…) dépend des conditions du service et des réglages de ton compte, pas de cet espace.
-
-Une consigne dans `AGENTS.md` n'y change rien : « ne lis pas ce fichier » est une règle de conduite, pas une protection. Le seul moyen sûr de ne pas envoyer un document, c'est qu'il soit hors de portée de l'agent.
-
-Concrètement :
-
-- **Ne mets dans l'espace et dans Zotero que des documents que tu accepterais de confier au fournisseur de ton agent** : supports de cours, articles, sujets, notes de travail…
-- **Range ailleurs ce qui est sensible** : papiers d'identité, documents médicaux, bancaires ou administratifs personnels, mots de passe, données personnelles d'autres personnes, documents confidentiels de stage, d'entreprise ou de laboratoire, tout ce qui est couvert par un accord de confidentialité.
-- **Toute ta bibliothèque Zotero compte**, pas seulement les collections liées à l'espace : Zotero Bridge peut chercher partout dedans. Si elle contient des documents sensibles, sors-les de cette bibliothèque.
-- **Les modules Apple ouvrent d'autres portes** : avec Apple Mail et Apple Calendar, les mails et les événements que l'agent lit partent eux aussi chez le fournisseur.
-- **Le dossier n'est pas une frontière** : selon les autorisations que tu lui accordes, l'agent peut lire d'autres fichiers de ton ordinateur. L'espace est seulement l'endroit où il lit le plus.
-- **Règle ton compte** : vérifie chez le fournisseur les réglages de confidentialité (conservation des conversations, utilisation pour l'entraînement). Pour que rien ne quitte ton ordinateur, il faudrait un modèle qui tourne entièrement en local.
-
-### Ce que l'espace garantit
-
-- Les modules n'ajoutent aucun service en ligne : en dehors de ce que l'agent lit, tes fichiers, ta bibliothèque et ta configuration restent sur ton ordinateur. Zotero Bridge écoute seulement en local, avec un token qui n'est jamais affiché.
+- Les modules n'ajoutent aucun service en ligne : à part ce que l'agent lit, tes fichiers, ta bibliothèque et ta configuration restent sur ton ordinateur. Zotero Bridge écoute seulement en local, avec un token qui n'est jamais affiché.
 - Les écritures sensibles (agenda, mails, classeur de notes) passent par un aperçu exact et ta confirmation, à chaque fois.
 - Jamais de suppression définitive : corbeille de Zotero, corbeille de Mail, sauvegarde horodatée du classeur.
 - Ta configuration (`local/config.json`) est ignorée par git : ce dépôt ne contient aucun chemin ni nom personnel.
