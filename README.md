@@ -9,7 +9,7 @@ Le dépôt est un **skill**. La première fois, l'agent te pose quelques questio
 ## Ce que tu obtiens
 
 ```text
-~/Etudes/Master de chimie/
+~/Etudes/Master de biologie/
 ├── AGENTS.md                    consignes lues par l'agent à chaque session
 ├── 00_Cadre/
 │   ├── README.md                programme, organisation, échéances
@@ -18,7 +18,7 @@ Le dépôt est un **skill**. La première fois, l'agent te pose quelques questio
 │   └── Sources/                 documents officiels (maquette, règlement…)
 ├── 01_A_faire/                  tâches reportées, reprenables par n'importe quel agent
 ├── Matieres/                    une matière par dossier
-│   └── CHO/TP/TP03/             sujet, données et scripts du TP 3
+│   └── BST/TP/TP03/             sujet, données et scripts du TP 3
 └── Obsidian/                    ton vault de notes
     ├── Dictionnaire.md          définitions accumulées au fil des cours
     └── À approfondir.md         notions à reprendre plus tard
@@ -37,7 +37,7 @@ Trois endroits, trois rôles :
 | **L'espace d'étude** | tes fichiers, tes notes, ton index, `AGENTS.md` | à toi, jamais écrasé |
 
 - **`AGENTS.md`** est un routeur : il dit à l'agent où se trouvent les sources, comment répondre sur un cours, comment classer un fichier transmis et ce qu'il a le droit de faire. Il ne recopie pas les informations qui changent ; il renvoie aux fichiers qui les portent. Claude Code et Codex le lisent dès qu'une session s'ouvre dans le dossier.
-- **L'index des correspondances** est le pivot : le même cours s'appelle « CHO » dans la maquette, « CHO TD gr2 » dans l'agenda et porte un tag dans Zotero. L'index relie ces noms et liste chaque ressource avec son chemin vérifié et son statut (`confirmée`, `observée`, `candidate`).
+- **L'index des correspondances** est le pivot : le même cours s'appelle « BST » dans la maquette, « BST TD gr2 » dans l'agenda et porte un tag dans Zotero. L'index relie ces noms et liste chaque ressource avec son chemin vérifié et son statut (`confirmée`, `observée`, `candidate`).
 - **Les modules** sont des skills facultatifs. L'installateur remplace les variables de leurs gabarits par tes chemins et garde les passages qui concernent les modules choisis : un skill Calendrier qui sait que tu utilises Zotero propose d'y chercher les supports d'une séance, sinon il n'en parle pas.
 
 Les principes suivis par les consignes :
@@ -128,14 +128,14 @@ Ouvre une session de ton agent dans le dossier de ton espace, puis parle-lui nor
 
 **Ranger**
 
-- « On va faire le TP 4 de chimie organique, je t'ai mis le sujet et les données dans Téléchargements. » → classé dans `Matieres/CHO/TP/TP04/`, indexé, puis l'agent te demande ce que tu veux faire.
+- « On va faire le TP 4 de biostatistiques, je t'ai mis le sujet et les données dans Téléchargements. » → classé dans `Matieres/BST/TP/TP04/`, indexé, puis l'agent te demande ce que tu veux faire.
 - « Ajoute ce diaporama du CM 2 à Zotero. » → rangé dans la bonne collection, avec les tags du cours et de la séance, puis indexé.
 
 **Comprendre et réviser**
 
-- « Dans le CM 3, que veut dire le prof par contrôle cinétique ? » → l'agent retrouve le support exact et cite le passage, puis explique.
+- « Dans le CM 3, pourquoi le prof corrige-t-il les p-values avec Benjamini-Hochberg ? » → l'agent retrouve le support exact et cite le passage, puis explique.
 - « Fais-moi dix questions de révision sur les chapitres 2 et 3, à partir des supports. »
-- « Ajoute « énantiomère » au dictionnaire. » · « Je verrai la RMN plus tard. » → ajouté à À approfondir.
+- « Ajoute « épissage alternatif » au dictionnaire. » · « Je verrai les modèles mixtes plus tard. » → ajouté à À approfondir.
 
 **S'organiser**
 
@@ -156,7 +156,7 @@ Ouvre une session de ton agent dans le dossier de ton espace, puis parle-lui nor
 
 ## Sécurité et confidentialité
 
-**Pars du principe que tout ce qui est lisible sera lu.** Avec un agent dont le modèle tourne dans le cloud (Claude, ChatGPT, Codex…), tout ce que l'agent lit part sur les serveurs de son fournisseur. Comme l'espace est fait pour qu'il cherche ses sources lui-même, tout ce qui se trouve dans le dossier et dans la bibliothèque Zotero reliée y passera un jour, sous une forme que tu ne choisis pas : extrait, résumé ou document entier. Avec Claude, cela veut dire chez Anthropic. Une consigne « ne lis pas ce fichier » ne protège rien : ce que tu ne veux pas transmettre n'a rien à faire dans l'espace ni dans Zotero.
+**Pars du principe que tout ce qui est lisible sera lu.** Avec un agent dont le modèle tourne dans le cloud (Claude, Codex, Gemini…), tout ce que l'agent lit part sur les serveurs de son fournisseur. Comme l'espace est fait pour qu'il cherche ses sources lui-même, tout ce qui se trouve dans le dossier et dans la bibliothèque Zotero reliée y passera un jour, sous une forme que tu ne choisis pas : extrait, résumé ou document entier. Avec Claude, cela veut dire chez Anthropic. Une consigne « ne lis pas ce fichier » ne protège rien : ce que tu ne veux pas transmettre n'a rien à faire dans l'espace ni dans Zotero.
 
 - Les modules n'ajoutent aucun service en ligne : à part ce que l'agent lit, tes fichiers, ta bibliothèque et ta configuration restent sur ton ordinateur. Zotero Bridge écoute seulement en local, avec un token qui n'est jamais affiché.
 - Les écritures sensibles (agenda, mails, classeur de notes) passent par un aperçu exact et ta confirmation, à chaque fois.

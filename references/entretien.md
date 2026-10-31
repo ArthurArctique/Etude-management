@@ -14,7 +14,7 @@ Regrouper les questions en deux ou trois messages, avec une valeur par défaut p
    | `professionnel` | formation continue, certification, veille | `Themes` | thème | `Formation`, `Exercices`, `Projets` |
    | `autre` | tout le reste | `Travail` | thème | `Cours`, `Exercices`, `Projets` |
 
-   Demander aussi un titre court (« Master de chimie », « Apprendre le japonais ») et, si utile, une description du domaine.
+   Demander aussi un titre court (« Master de biologie », « Apprendre le japonais ») et, si utile, une description du domaine.
 2. **Emplacement.** Où créer le dossier ? Proposer `~/Etudes/<titre court>`. Un dossier synchronisé (iCloud Drive, OneDrive, Dropbox) le rend disponible sur ses autres appareils. Éviter les apostrophes dans le chemin : elles compliquent les commandes des skills. Prévenir aussi, en une phrase : avec un modèle dans le cloud, tout ce qui est lisible dans ce dossier et dans Zotero finira un jour chez le fournisseur de l'agent.
 3. **Langue** des réponses et des fichiers créés : par défaut celle de la conversation.
 4. **Agents.** Lesquels utilise-t-il ? Dossiers de skills par défaut : `~/.claude/skills` (Claude Code), `~/.codex/skills` (Codex). Pour un autre agent, demander son dossier de skills. L'agent principal reçoit les fichiers des modules ; les autres reçoivent un lien symbolique.
@@ -50,9 +50,9 @@ Seul `espace` est obligatoire ; les autres clés prennent les valeurs par défau
 
 ```json
 {
-  "espace": "~/Etudes/Master de chimie",
-  "titre": "Master de chimie",
-  "domaine": "un master de chimie organique",
+  "espace": "~/Etudes/Master de biologie",
+  "titre": "Master de biologie",
+  "domaine": "un master de biologie et de biostatistiques",
   "type": "universite",
   "langue": "français",
   "agents": ["claude", "codex"],
